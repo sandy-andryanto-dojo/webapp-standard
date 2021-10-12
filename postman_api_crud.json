@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "951b9c61-0cad-4690-854b-7b9de93bcd76",
+		"name": "webminiapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Auth Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "secret",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/auth/token",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csrf_test_name",
+							"value": "a61c19a152301cf85e755aaf4c50f03f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/contact/list",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"contact",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csrf_test_name",
+							"value": "a61c19a152301cf85e755aaf4c50f03f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/contact/create",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"contact",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csrf_test_name",
+							"value": "a61c19a152301cf85e755aaf4c50f03f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/contact/edit",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"contact",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Contact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJpcF9hZGRyZXNzIjoiMC4wLjAuMCIsInVzZXJuYW1lIjoiYWRtaW4iLCJwaG9uZSI6IjMzNC40MTQuNTE2NyB4NTE1MSIsInBhc3N3b3JkIjoiJDJ5JDEwJGF3NS5lS3UuTmVBVHcudEVHdEguamVnNHQ4WHJmM010UjJpdUouVXlJSFJRWTBpZFhpQ2hHIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJhY3RpdmF0aW9uX3NlbGVjdG9yIjpudWxsLCJhY3RpdmF0aW9uX2NvZGUiOm51bGwsImZvcmdvdHRlbl9wYXNzd29yZF9zZWxlY3RvciI6bnVsbCwiZm9yZ290dGVuX3Bhc3N3b3JkX2NvZGUiOm51bGwsImZvcmdvdHRlbl9wYXNzd29yZF90aW1lIjpudWxsLCJyZW1lbWJlcl9zZWxlY3RvciI6bnVsbCwicmVtZW1iZXJfY29kZSI6bnVsbCwiY3JlYXRlZF9vbiI6IjE2MjU2NjM1NjIiLCJsYXN0X2xvZ2luIjoiMTYyNTY2NjMxOCIsImFjdGl2ZSI6IjEiLCJob21lcGFnZSI6ImFjY291bnRcL3Byb2ZpbGUifQ.OR4dEXiNQ-xu2G4_2ZkqOuib-oL3A3VYnFzm0qtnWJI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csrf_test_name",
+							"value": "a61c19a152301cf85e755aaf4c50f03f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/contact/detail",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"contact",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Contact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJpcF9hZGRyZXNzIjoiMC4wLjAuMCIsInVzZXJuYW1lIjoiYWRtaW4iLCJwaG9uZSI6IjMzNC40MTQuNTE2NyB4NTE1MSIsInBhc3N3b3JkIjoiJDJ5JDEwJGF3NS5lS3UuTmVBVHcudEVHdEguamVnNHQ4WHJmM010UjJpdUouVXlJSFJRWTBpZFhpQ2hHIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJhY3RpdmF0aW9uX3NlbGVjdG9yIjpudWxsLCJhY3RpdmF0aW9uX2NvZGUiOm51bGwsImZvcmdvdHRlbl9wYXNzd29yZF9zZWxlY3RvciI6bnVsbCwiZm9yZ290dGVuX3Bhc3N3b3JkX2NvZGUiOm51bGwsImZvcmdvdHRlbl9wYXNzd29yZF90aW1lIjpudWxsLCJyZW1lbWJlcl9zZWxlY3RvciI6bnVsbCwicmVtZW1iZXJfY29kZSI6bnVsbCwiY3JlYXRlZF9vbiI6IjE2MjU2NjM1NjIiLCJsYXN0X2xvZ2luIjoiMTYyNTY2NjMxOCIsImFjdGl2ZSI6IjEiLCJob21lcGFnZSI6ImFjY291bnRcL3Byb2ZpbGUifQ.OR4dEXiNQ-xu2G4_2ZkqOuib-oL3A3VYnFzm0qtnWJI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csrf_test_name",
+							"value": "a61c19a152301cf85e755aaf4c50f03f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/contact/delete",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"contact",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

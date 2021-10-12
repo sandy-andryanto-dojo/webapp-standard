@@ -1,0 +1,5 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
+
+$config['app_name'] = 'Codeigniter';
+$config['app_version'] = 'v.01';
+$config['app_key'] = 'secret';

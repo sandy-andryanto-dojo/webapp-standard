@@ -1,0 +1,67 @@
+/*!
+ * Start Bootstrap - Blog Home (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 70px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.file-input .input-group-addon, .file-input .input-group-btn {
+   width: auto !important;
+}
+
+.embed-responsive{
+    border: 1px solid #eee;
+}
+
+h1.error{
+    font-size: 200px;
+}
+
+
+#DefaultCaptcha_CaptchaImageDiv, #DefaultCaptcha_CaptchaIconsDiv{
+	margin-left: 50px;
+}
+
+
+
+#DefaultCaptcha_CaptchaImage{
+	border: 2px solid  #ced4da;
+}
+
+#DefaultCaptcha_CaptchaIconsDiv{
+	margin-top: 5px  !important;
+}
+
+#captcha-section{
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+
+.login-page,
+.register-page {
+  background: url(../img/background.jpg) no-repeat center center fixed !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+

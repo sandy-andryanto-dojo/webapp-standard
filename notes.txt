@@ -1,0 +1,32 @@
+# Update All
+php index.php console/db_schema && git add . && git commit -am "update new" && git push origin master
+
+# Update Coding Only
+git add . && git commit -am "update new" && git push origin master
+
+# Running Application
+php -S 127.0.0.1:7456
+
+# Indexing Database
+php index.php console/db_index
+
+# Backup Datbase Schema
+php index.php console/db_schema
+
+# Seed Data
+php index.php console/db_seed
+
+# Route Update
+php index.php console/route_update
+
+# Base Table
+
+CREATE TABLE `` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(40) DEFAULT NULL,
+  `description` text DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `active` tinyint(4) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

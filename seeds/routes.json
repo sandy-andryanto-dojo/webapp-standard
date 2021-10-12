@@ -1,0 +1,61 @@
+[{
+		"label": "Dashboard",
+		"url": "dashboard/summary",
+		"icon": "fa-dashboard",
+		"childs": []
+	},
+	{
+		"label": "Referensi",
+		"url": "javascript:void(0);",
+		"icon": "fa-tags",
+		"childs": [{
+				"label": "Kontak",
+				"url": "reference/contact",
+				"icon": null,
+				"childs": []
+			}
+		]
+	},
+	{
+		"label": "Pengaturan",
+		"url": "javascript:void(0);",
+		"icon": "fa-gears",
+		"childs": [{
+				"label": "Umum",
+				"url": "setting/application",
+				"icon": null,
+				"childs": []
+			},
+			{
+				"label": "Backup Database",
+				"url": "setting/database_backup",
+				"icon": null,
+				"childs": []
+			},
+			{
+				"label": "Audit Trail",
+				"url": "setting/audit",
+				"icon": null,
+				"childs": []
+			},
+			{
+				"label": "Pengguna",
+				"url": "setting/user",
+				"icon": null,
+				"childs": []
+			},
+			{
+				"label": "Hak Akses",
+				"url": "setting/role",
+				"icon": null,
+				"childs": []
+			},
+			{
+				"label": "Mac Address",
+				"url": "setting/mac_address",
+				"icon": null,
+				"childs": []
+			}
+		]
+	}
+]
